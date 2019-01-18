@@ -16,10 +16,31 @@
     justify-content: center;
     }
 
+.border-radius(@radius) {
+   -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+        border-radius: @radius;
+}
+      
+@button-font-color: red;
+@btn-bg: @btn-bg-color;
+.button-colors{
+    color: @button-font-color;
+    background: @btn-bg;
+}
 
-.build-button(@width, @height){
+
+.example-button(@width, @height, @radius){
+    .button-colors;
     width: @width;
     height: @height;
-    background: @button-bg-color;
-    border: 1px solid @spaceblue;
+    .border-radius(@radius)
+}
+
+
+.top-style(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
