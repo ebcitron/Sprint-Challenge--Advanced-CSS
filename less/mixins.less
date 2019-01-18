@@ -1,1 +1,25 @@
 // Mixins Here
+
+
+.colors(){
+    color: #22283B;
+    background: #f4f4f4;
+}
+.nav-styles(){
+    @nav-bg: @wild-sand;
+    @nav-font: @river-bend;
+    @nav-border: @sea-shell;
+}
+.center() {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    }
+
+
+.build-button(@width, @height){
+    width: @width;
+    height: @height;
+    background: @button-bg-color;
+    border: 1px solid @spaceblue;
+}
