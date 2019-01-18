@@ -1,5 +1,5 @@
 // Mixins Here
-
+@phone: ~'(max-width: 500)';
 
 .colors(){
     color: #22283B;
@@ -34,8 +34,21 @@
     .button-colors;
     width: @width;
     height: @height;
-    .border-radius(@radius)
-}
+    .border-radius(@radius);
+
+    @media @phone {
+        width: 100%;
+    }
+  
+    &:hover {
+        
+    background: @btn-font-color;
+    color: @btn-bg;
+   
+    }
+
+    
+    } 
 
 
 .top-style(){
