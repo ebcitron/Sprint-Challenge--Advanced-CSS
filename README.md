@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive websites might have hard coded pixels, its quick to get out for multiple devices, but only works at certain breakpoints. Responsive websites, on the other hand, create a seamless experience with  media queries so things expand and shrink along with the viewport. This takes longer, and is better for long term projects.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first sets the min-width, while Desktop first sets the max-width. In doing so you can decide which style the layout should use first, untill the conditions in the viewport are met. The decision should be made Depending on your end goal, and how the end user is most likely to access the site. In some cases its easier to start off in one direction, and than use media queries to code little changes for the next.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    Since 1rem = 16px, its easier to set things up for yourself to begin with where 1 rem = 10px, so for the rest of the project you can think of things in terms of pixels/10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is processessing code(less) into different code(css), before it is than proccessed by the Browser and rendered into styling. It further bridges the gap between people language(english) and computer language(binaray), since less is easier for humans to read and write than css. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite thing about preprocessing is the syntax, Im not sure if you can create functions in vanilla css, but if you can im sure its significantly less intuitive. The syntax allows me to organize my code alot better, which is one thing im typically weak at.
+
+    The concept that gives me the most trouble is remembering to make sure less-watch-compiler is running, ive gone back and deleted good code because I was confused it wasnt working, when really it wasnt being added.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
