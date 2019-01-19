@@ -185,6 +185,11 @@ p {
   color: #5E6164;
   font-size: 1.4rem;
   margin: 1.5rem;
+  position: relative;
+  transition: 3s all ease;
+}
+#top nav a:hover {
+  transform: scale(3);
 }
 footer {
   color: #22283B;
